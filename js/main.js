@@ -8,4 +8,8 @@ $(function(){
     $('.modal').css('display', 'none');
   });
 
+  $('.submit').on('click', function(){
+    $('.getstarted input').attr('class', 'error');
+  });
+
 });
