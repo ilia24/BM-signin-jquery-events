@@ -1,15 +1,19 @@
 $(function(){
 
   $('.signin').on('click', function(){
-    $('.modal').css('display', 'block');
+    $('.modal').fadeIn();
   });
 
   $('.close').on('click', function(){
-    $('.modal').css('display', 'none');
+    $('.modal').fadeOut();
   });
 
   $('.submit').on('click', function(){
     $('.getstarted input').attr('class', 'error');
+  });
+
+  $('.getstarted').on('mouseenter', 'input', function(){
+    $(this).attr('class', 'okay');
   });
 
 });
